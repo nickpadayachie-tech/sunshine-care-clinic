@@ -1482,9 +1482,9 @@ svg {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #25d366;
+  background: var(--c-turquoise);
   color: var(--c-white);
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 10px 25px rgba(25, 183, 197, 0.45);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
@@ -1499,7 +1499,7 @@ svg {
   inset: 0;
   z-index: -1;
   border-radius: 50%;
-  background: rgba(37, 211, 102, 0.5);
+  background: rgba(25, 183, 197, 0.5);
   animation: wa-pulse 2.4s ease-out infinite;
 }
 
@@ -1516,8 +1516,8 @@ svg {
 
 .wa-float:hover {
   transform: translateY(-3px) scale(1.05);
-  background: #1ebe5b;
-  box-shadow: 0 14px 32px rgba(37, 211, 102, 0.55);
+  background: var(--c-turquoise-dark);
+  box-shadow: 0 14px 32px rgba(25, 183, 197, 0.55);
 }
 
 .wa-float-bubble {
