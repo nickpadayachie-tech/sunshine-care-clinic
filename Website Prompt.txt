@@ -1,0 +1,20 @@
+hey opencode,
+
+please help me design a website to advertise the following:
+
+Sunshine Health Care.
+please include the following services:
+•	IV / Drip Therapy / Vitamin Drips
+•	Baby Wellness & Immunisation
+•	Basic Assessments
+•	Also prompt it to view the attachments for more information 
+
+Design & Colour Scheme:
+Please use the following colours:
+•	Light Blue
+•	Dark Blue
+•	Turquoise Blue
+
+please ensure that it is created with HTML, CSS and JS. please also avoid using icons that look too AI-generated, as well as dashes for explanations. additionally, pay close attention to the images to see further information about services, contact information and other information you may find useful. do not put the images into the website please, just use the information from them to add into the website.
+
+that the colour palette should remain closely aligned with the colours in the Sunshine Health Care logo, ensuring a consistent and professional brand identity throughout the website. 
