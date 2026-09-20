@@ -1754,6 +1754,16 @@ svg {
     width: 46px;
     height: 46px;
   }
+
+  .brand-text-wrap {
+    min-width: 0;
+  }
+
+  .brand-slogan {
+    white-space: normal;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+  }
 }
 
   .hero {
