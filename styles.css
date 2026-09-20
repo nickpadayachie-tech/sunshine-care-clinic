@@ -902,20 +902,20 @@ svg {
 }
 
 .drips-head {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 48px;
-  margin-bottom: 48px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
 }
 
 .drips-head .section-head {
-  margin: 0;
-  text-align: left;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .drips-photo {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
+  max-width: 300px;
+  margin: 36px auto 0;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1002,9 +1002,9 @@ svg {
 }
 
 .booking-panel {
-  max-width: 780px;
+  max-width: 620px;
   margin: 0 auto;
-  padding: 34px;
+  padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.97);
@@ -1692,13 +1692,8 @@ svg {
     margin-inline: auto;
   }
 
-  .drips-head {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .drips-head .section-head {
-    text-align: center;
+  .drips-photo {
+    margin-top: 30px;
   }
 
   .tick-list {
