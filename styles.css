@@ -172,13 +172,13 @@ svg {
   left: 2rem;
 }
 
-.eyebrow-script {
+.eyebrow.eyebrow-script {
   font-family: "Dancing Script", cursive;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0;
   text-transform: none;
-  color: var(--c-turquoise-dark);
+  color: var(--c-turquoise);
 }
 
 /* Top bar */
