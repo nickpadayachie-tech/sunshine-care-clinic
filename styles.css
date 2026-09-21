@@ -903,7 +903,7 @@ svg {
 
 .drips-head {
   max-width: 700px;
-  margin: 0 auto 40px;
+  margin: 0 auto 44px;
   text-align: center;
 }
 
@@ -912,22 +912,44 @@ svg {
   text-align: center;
 }
 
+.drips-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 40px;
+}
+
 .drips-photo {
-  aspect-ratio: 1 / 1;
-  max-width: 300px;
-  margin: 36px auto 0;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.08);
+  background: #075E79;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
 }
 
+.drips-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("drip pic.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(16px) saturate(1.15);
+  transform: scale(1.15);
+}
+
 .drips-photo img {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.35));
 }
 
 .drip-grid {
@@ -1002,8 +1024,8 @@ svg {
 }
 
 .booking-panel {
-  max-width: 620px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: var(--radius-lg);
@@ -1692,8 +1714,19 @@ svg {
     margin-inline: auto;
   }
 
+  .drips-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .drips-head .section-head {
+    text-align: center;
+  }
+
   .drips-photo {
-    margin-top: 30px;
+    justify-self: center;
+    width: 320px;
+    max-width: 100%;
   }
 
   .tick-list {
