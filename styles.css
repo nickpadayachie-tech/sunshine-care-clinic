@@ -312,9 +312,10 @@ svg {
   white-space: nowrap;
 }
 
-/* PNP & SANC tooltips */
+/* PNP, SANC & qualification tooltips */
 .pnp,
-.sanc {
+.sanc,
+.qual {
   position: relative;
   display: inline-block;
   cursor: help;
@@ -322,7 +323,8 @@ svg {
 }
 
 .pnp-tip,
-.sanc-tip {
+.sanc-tip,
+.qual-tip {
   position: absolute;
   top: calc(100% + 9px);
   left: 50%;
@@ -350,7 +352,8 @@ svg {
 }
 
 .pnp-tip::before,
-.sanc-tip::before {
+.sanc-tip::before,
+.qual-tip::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -365,13 +368,16 @@ svg {
 .pnp:hover .pnp-tip,
 .pnp:focus-visible .pnp-tip,
 .sanc:hover .sanc-tip,
-.sanc:focus-visible .sanc-tip {
+.sanc:focus-visible .sanc-tip,
+.qual:hover .qual-tip,
+.qual:focus-visible .qual-tip {
   opacity: 1;
 }
 
 @media (hover: none), (pointer: coarse) {
   .pnp-tip,
-  .sanc-tip {
+  .sanc-tip,
+  .qual-tip {
     display: none;
   }
 }
