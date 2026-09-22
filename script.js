@@ -81,6 +81,31 @@ document.documentElement.classList.add("js-enabled");
     });
   }
 
+  var tipTriggers = document.querySelectorAll(".pnp, .sanc, .qual");
+  if (tipTriggers.length && window.matchMedia("(hover: none), (pointer: coarse)").matches) {
+    tipTriggers.forEach(function (trigger) {
+      trigger.addEventListener("click", function (event) {
+        event.preventDefault();
+        var wasOpen = trigger.classList.contains("is-open");
+        tipTriggers.forEach(function (t) {
+          t.classList.remove("is-open");
+        });
+        if (!wasOpen) {
+          trigger.classList.add("is-open");
+        }
+      });
+    });
+
+    document.addEventListener("click", function (event) {
+      var target = event.target;
+      if (!target.closest || !target.closest(".pnp, .sanc, .qual")) {
+        tipTriggers.forEach(function (t) {
+          t.classList.remove("is-open");
+        });
+      }
+    });
+  }
+
   var bookingForm = document.getElementById("bookingForm");
   if (bookingForm) {
     var linesWrap = document.getElementById("bookingLines");

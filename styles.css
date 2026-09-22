@@ -378,7 +378,13 @@ svg {
   .pnp-tip,
   .sanc-tip,
   .qual-tip {
-    display: none;
+    opacity: 0;
+  }
+
+  .pnp.is-open .pnp-tip,
+  .sanc.is-open .sanc-tip,
+  .qual.is-open .qual-tip {
+    opacity: 1;
   }
 }
 
